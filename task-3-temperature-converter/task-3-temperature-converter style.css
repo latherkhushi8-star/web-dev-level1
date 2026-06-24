@@ -1,0 +1,115 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES
+   ========================================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. CONVERTER CONTAINER
+   ========================================================================== */
+.converter-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ==========================================================================
+   3. INPUTS & CHOOSE UNITS
+   ========================================================================== */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+}
+
+/* ==========================================================================
+   4. BUTTON STYLE
+   ========================================================================== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ==========================================================================
+   5. ERROR & RESULTS AREA
+   ========================================================================== */
+.error-msg {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.results-box {
+    margin-top: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.results-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.results-box p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: #333;
+    font-weight: 500;
+}
